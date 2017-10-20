@@ -77,8 +77,9 @@ RUN set -ex \
     pip install --upgrade pip ;\
     pip install --upgrade python-ldap ;\
     pip install --upgrade lxml ;\
+    pip install --upgrade --force "pyopenssl>=0.14" ;\
     pip install --upgrade supervisor \
-    ; \
+; \
     git clone --branch $BV_SYN --depth 1 https://github.com/matrix-org/synapse.git \
     && cd /synapse \
     && pip install --upgrade --process-dependency-links . \
