@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:stretch
 
 # Maintainer
 MAINTAINER anaxios <anaxios@daedalist.net>
@@ -56,7 +56,7 @@ RUN set -ex \
         libsasl2-dev \
         libsqlite3-dev \
         libssl-dev \
-        libssl1.0.0 \
+        libssl1.1.0 \
         libtool \
         libxml2 \
         libxml2-dev \
