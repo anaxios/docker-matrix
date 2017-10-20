@@ -56,7 +56,7 @@ RUN set -ex \
         libsasl2-dev \
         libsqlite3-dev \
         libssl-dev \
-        libssl1.1.0 \
+        libssl1.1 \
         libtool \
         libxml2 \
         libxml2-dev \
