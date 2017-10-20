@@ -10,7 +10,7 @@ The riot.im web client has now his own docker file at [github].
 [github]: https://github.com/anaxios/docker-matrix
 
 # Contribution
-###This is a fork of SilvioFricke's project. Please contribute to him and his project. Not to mine. I just want to update more frequently. 
+###This is a fork of SilvioFricke's project. Please contribute to him and his project. Not to mine. I just want to update more frequently.
 
 If you want contribute to this project feel free to fork this project, do your
 work in a branch and create a pull request.
@@ -34,14 +34,14 @@ To get the things done, "generate" will create a own self-signed certificate.
 
 Example:
 
-    $ docker run -v /tmp/data:/data --rm -e SERVER_NAME=localhost -e REPORT_STATS=no silviof/docker-matrix generate
+    $ docker run -v /tmp/data:/data --rm -e SERVER_NAME=localhost -e REPORT_STATS=no anaxios/docker-matrix generate
 
 # Start
 
 For starting you need the port bindings and a mapping for the
 `/data`-directory.
 
-    $ docker run -d -p 8448:8448 -p 3478:3478 -v /tmp/data:/data silviof/docker-matrix start
+    $ docker run -d -p 8448:8448 -p 3478:3478 -v /tmp/data:/data anaxios/docker-matrix start
 
 # Port configurations
 
@@ -72,7 +72,7 @@ In case you don't want to expose the whole port range on udp you can change the 
 To get the installed synapse version you can run the image with `version` as
 argument or look at the container via cat.
 
-    $ docker run -ti --rm silviof/docker-matrix version
+    $ docker run -ti --rm anaxios/docker-matrix version
     -=> Matrix Version
     synapse: master (7e0a1683e639c18bd973f825b91c908966179c15)
     coturn:  master (88bd6268d8f4cdfdfaffe4f5029d489564270dd6)
@@ -109,7 +109,7 @@ argument.
 
 
 ```
-$ docker run --rm -ti -v /tmp/data:/data silviof/docker-matrix diff
+$ docker run --rm -ti -v /tmp/data:/data anaxios/docker-matrix diff
 [...]
 +# ldap_config:
 +#   enabled: true
